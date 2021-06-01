@@ -1,0 +1,152 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Hired_dotnet.master.cs" Inherits="Hired_dotnet.Hired_dotnet" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%--custom stylesheet--%>
+    <link href="css/customstyle.css" rel="stylesheet" />
+
+    <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <%--popper-js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap-js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <%--datatables-js--%>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+    <%--<script>
+        function DisableBackButtonAllBrowsers() {
+            window.history.forward()
+        };
+        DisableBackButtonAllBrowsers();
+        window.onload = DisableBackButtonAllBrowsers;
+        window.onpageshow = function (evts) {
+            if (evts.persisted) DisableBackButtonAllBrowsers();
+        };
+        window.onunload = function () { void (0) }; 
+    </script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div>
+            <nav class = "navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/main icon.png" width="50" height="30" />
+                    Hired.net
+                </a>
+ 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+ 
+                    </ul>
+ 
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server">View Jobs</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" Visible="False" OnClick="LinkButton2_Click">View Profile</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" Visible="False" OnClick="LinkButton3_Click">Logout</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server" Visible="False">Hello user</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+ 
+ 
+            </nav>
+        </div>
+
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+         <!-- Footer -->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+					<div class="widget">
+						<h5>About Hired.net</h5>
+						<p>
+						Helping young job seekers with potential since 2015.
+						</p>
+					</div>
+					</div>
+					
+				<div class="col-sm-6 col-md-4">
+					<div class="widget">
+						<h5>Contact Us</h5>
+						<p>
+						We are here to help you anytime you want.
+						</p>
+						<ul>
+							<li>+91 9899918356</li>
+							<li>hired.net@nireddotnet.in</li>
+						</ul>
+					</div>
+					</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="widget">
+						<h5>Our location</h5>
+						<p>Mumbai<br>Hyderabad<br>Chennai<br>Delhi<br>Bengaluru</p>		
+						
+					</div>
+					</div>
+					
+ 
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy All right Reversed Hired.net</p>
+                    </div>
+                </div>
+            </div>
+ 
+        </footer>
+        <!-- ./Footer -->
+
+    </form>
+</body>
+</html>

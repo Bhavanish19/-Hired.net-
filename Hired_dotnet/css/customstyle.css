@@ -1,0 +1,32 @@
+﻿body {
+    background-image: url('../imgs/indian_navy_bg.jpg');
+}
+
+.widget {
+    color: #ffffff;
+}
+
+h5 {
+    color: #ffffff;
+}
+
+.footerlinks {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+.footerlinks:hover {
+        color: #ffd800;
+}
+
+#footer3 {
+    background: #000000
+}
+
+#footer1 {
+    background: #762b00;
+}
+
+#footer2 {
+    background: #531f00;
+}
